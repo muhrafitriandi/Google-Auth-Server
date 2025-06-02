@@ -22,6 +22,7 @@ Here's a list of features included in this project:
 | [Sessions](https://start.ktor.io/p/ktor-sessions)                      | Adds support for persistent sessions through cookies or headers                    |
 | [Authentication](https://start.ktor.io/p/auth)                         | Provides extension point for handling the Authorization header                     |
 | [Koin](https://start.ktor.io/p/koin)                                   | Provides dependency injection                                                      |
+| [Google Client API](https://github.com/googleapis/google-api-java-client)                      | Supports verifying Google ID tokens and interacting with Google APIs                                                      |
 
 ## Building & Running
 

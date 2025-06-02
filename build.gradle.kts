@@ -44,4 +44,7 @@ dependencies {
     // Koin
     implementation(libs.koin.ktor)
     implementation(libs.koin.logger.slf4j)
+
+    // Google Client API Library
+    implementation(libs.google.api.client)
 }

@@ -54,7 +54,7 @@ fun Application.configureDatabases() {
 /**
  * Establishes connection with a MongoDB database.
  *
- * The following configuration properties (in application.yaml/application.conf) can be specified:
+ * The following configuration properties (in application.conf/application.conf) can be specified:
  * * `db.mongo.user` username for your database
  * * `db.mongo.password` password for the user
  * * `db.mongo.host` host that will be used for the database connection
