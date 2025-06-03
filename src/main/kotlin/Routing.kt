@@ -1,6 +1,7 @@
 package com.yandey
 
 import com.mongodb.client.*
+import com.yandey.routes.rootRoute
 import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
@@ -19,8 +20,6 @@ import org.slf4j.event.*
 
 fun Application.configureRouting() {
     routing {
-        get("/") {
-            call.respondText("Hello World!")
-        }
+        rootRoute()
     }
 }
