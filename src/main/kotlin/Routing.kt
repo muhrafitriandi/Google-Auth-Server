@@ -2,6 +2,7 @@ package com.yandey
 
 import com.mongodb.client.*
 import com.yandey.routes.rootRoute
+import com.yandey.routes.unauthorizedRoute
 import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
@@ -21,5 +22,6 @@ import org.slf4j.event.*
 fun Application.configureRouting() {
     routing {
         rootRoute()
+        unauthorizedRoute()
     }
 }
