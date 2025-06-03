@@ -24,7 +24,7 @@ import org.slf4j.event.*
 fun Application.configureRouting() {
     routing {
         rootRoute()
-        tokenVerificationRoute()
+        tokenVerificationRoute(application)
         authorizedRoute()
         unauthorizedRoute()
     }
