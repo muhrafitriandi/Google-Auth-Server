@@ -1,7 +1,7 @@
 package com.yandey
 
 import com.yandey.plugins.configureAuthentication
-import com.yandey.plugins.configureFrameworks
+import com.yandey.plugins.configureKoin
 import com.yandey.plugins.configureMonitoring
 import com.yandey.plugins.configureRouting
 import com.yandey.plugins.configureSerialization
@@ -13,10 +13,10 @@ fun main(args: Array<String>) {
 }
 
 fun Application.module() {
+    configureKoin()
     configureAuthentication()
+    configureRouting()
     configureSerialization()
     configureMonitoring()
-    configureFrameworks()
-    configureRouting()
     configureSession()
 }
