@@ -1,4 +1,4 @@
-package com.yandey
+package com.yandey.plugins
 
 import com.yandey.domain.model.Endpoint
 import com.yandey.domain.model.UserSession

@@ -1,4 +1,4 @@
-package com.yandey
+package com.yandey.plugins
 
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*

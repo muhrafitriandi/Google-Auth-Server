@@ -1,4 +1,4 @@
-package com.yandey
+package com.yandey.plugins
 
 import com.yandey.domain.model.UserSession
 import io.ktor.server.application.Application
