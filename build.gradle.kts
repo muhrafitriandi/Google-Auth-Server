@@ -36,10 +36,9 @@ dependencies {
     // Authentication
     implementation(libs.ktor.server.auth)
 
-    // MongoDB
-    implementation(libs.mongodb.driver.core)
-    implementation(libs.mongodb.driver.sync)
-    implementation(libs.bson)
+    // KMongo
+    implementation(libs.kmongo.async)
+    implementation(libs.kmongo.coroutine.serialization)
 
     // Koin
     implementation(libs.koin.ktor)

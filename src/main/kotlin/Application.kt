@@ -1,7 +1,6 @@
 package com.yandey
 
 import com.yandey.plugins.configureAuthentication
-import com.yandey.plugins.configureDatabases
 import com.yandey.plugins.configureFrameworks
 import com.yandey.plugins.configureMonitoring
 import com.yandey.plugins.configureRouting
@@ -16,7 +15,6 @@ fun main(args: Array<String>) {
 fun Application.module() {
     configureAuthentication()
     configureSerialization()
-    configureDatabases()
     configureMonitoring()
     configureFrameworks()
     configureRouting()
