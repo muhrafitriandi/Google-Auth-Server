@@ -6,6 +6,7 @@ import com.yandey.routes.getUserInfoRoute
 import com.yandey.routes.rootRoute
 import com.yandey.routes.tokenVerificationRoute
 import com.yandey.routes.unauthorizedRoute
+import com.yandey.routes.updateUserRoute
 import io.ktor.server.application.*
 import io.ktor.server.routing.*
 import org.koin.java.KoinJavaComponent.inject
@@ -17,6 +18,7 @@ fun Application.configureRouting() {
         rootRoute()
         tokenVerificationRoute(application, userDataSource)
         getUserInfoRoute(application, userDataSource)
+        updateUserRoute(application, userDataSource)
         authorizedRoute()
         unauthorizedRoute()
     }
