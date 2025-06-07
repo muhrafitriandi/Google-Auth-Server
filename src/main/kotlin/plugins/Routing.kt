@@ -2,6 +2,7 @@ package com.yandey.plugins
 
 import com.yandey.domain.repository.UserDataSource
 import com.yandey.routes.authorizedRoute
+import com.yandey.routes.getUserInfoRoute
 import com.yandey.routes.rootRoute
 import com.yandey.routes.tokenVerificationRoute
 import com.yandey.routes.unauthorizedRoute
@@ -15,6 +16,7 @@ fun Application.configureRouting() {
 
         rootRoute()
         tokenVerificationRoute(application, userDataSource)
+        getUserInfoRoute(application, userDataSource)
         authorizedRoute()
         unauthorizedRoute()
     }
