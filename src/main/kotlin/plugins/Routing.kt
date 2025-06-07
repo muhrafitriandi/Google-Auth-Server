@@ -5,6 +5,7 @@ import com.yandey.routes.authorizedRoute
 import com.yandey.routes.deleteUserRoute
 import com.yandey.routes.getUserInfoRoute
 import com.yandey.routes.rootRoute
+import com.yandey.routes.signOutRoute
 import com.yandey.routes.tokenVerificationRoute
 import com.yandey.routes.unauthorizedRoute
 import com.yandey.routes.updateUserRoute
@@ -21,6 +22,7 @@ fun Application.configureRouting() {
         getUserInfoRoute(application, userDataSource)
         updateUserRoute(application, userDataSource)
         deleteUserRoute(application, userDataSource)
+        signOutRoute()
         authorizedRoute()
         unauthorizedRoute()
     }
