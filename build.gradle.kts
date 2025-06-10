@@ -12,6 +12,10 @@ application {
     mainClass = "io.ktor.server.netty.EngineMain"
 }
 
+tasks {
+    create("stage").dependsOn("installDist")
+}
+
 repositories {
     mavenCentral()
 }
